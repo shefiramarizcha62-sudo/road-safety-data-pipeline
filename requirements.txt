@@ -1,1 +1,16 @@
 
+# Big Data Processing
+pyspark==4.3.0
+findspark
+
+# Data Manipulation
+pandas
+numpy
+
+# Data Visualization
+matplotlib
+seaborn
+
+# Notebook Environment
+jupyter
+ipykernel

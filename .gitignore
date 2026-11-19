@@ -1,1 +1,46 @@
 
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environment and environment variables
+venv/
+.env/
+
+# Raw dataset (not included in GitHub)
+data/raw/
+
+# Cleaned CSV (not included in GitHub)
+data/cleaned/*.csv
+
+# Cleaned Parquet (included in GitHub)
+!data/cleaned/traffic_accidents_clean.parquet/
+!data/cleaned/traffic_accidents_clean.parquet/**
+
+# Spark metadata and checksum
+**/.crc
+**/_SUCCESS
+**/._SUCCESS.crc
+
+# Aggregated temporary outputs
+data/aggregated/
+
+# Outputs
+outputs/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spark metadata and checksum
+**/*.crc
+**/_SUCCESS
+**/._SUCCESS.crc
