@@ -13,15 +13,14 @@ venv/
 # Raw dataset (not included in GitHub)
 data/raw/
 
-# Cleaned CSV (not included in GitHub)
-data/cleaned/*.csv
-
-# Cleaned Parquet (included in GitHub)
+# Cleaned datasets (included in GitHub)
+!data/cleaned/traffic_accidents_clean.csv/
+!data/cleaned/traffic_accidents_clean.csv/**
 !data/cleaned/traffic_accidents_clean.parquet/
 !data/cleaned/traffic_accidents_clean.parquet/**
 
 # Spark metadata and checksum
-**/.crc
+**/*.crc
 **/_SUCCESS
 **/._SUCCESS.crc
 
@@ -39,8 +38,3 @@ derby.log/
 # OS
 .DS_Store
 Thumbs.db
-
-# Spark metadata and checksum
-**/*.crc
-**/_SUCCESS
-**/._SUCCESS.crc
